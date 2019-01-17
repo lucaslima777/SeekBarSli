@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <seekbar.sli.developer.lln.Sli
+        android:id="@+id/slid"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:slidr_indicator_inside="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:slidr_region_leftColor="#003BCF"
+        app:slidr_regions_centerText="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/slid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="go"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+   <!-- <seekbar.sli.developer.lln.Slidr
+        android:id="@+id/slideure"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slid"
+        app:slidr_region_leftColor="@color/colorPrimaryDark"
+        app:slidr_step_colorizeAfterLast="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <seekbar.sli.developer.lln.Slidr
+        android:id="@+id/slideure_regions"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideure"
+        app:slidr_draw_bubble="false"
+        app:slidr_region_leftColor="@color/colorPrimary"
+        app:slidr_region_rightColor="@color/colorPrimaryDark"
+        app:slidr_regions="true"
+        app:slidr_regions_centerText="true"
+        app:slidr_regions_textFollowRegionColor="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <seekbar.sli.developer.lln.Slidr
+        android:id="@+id/slideure2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slideure_regions"
+        app:slidr_barHeight="10dp"
+        app:slidr_step_colorizeAfterLast="true"
+        app:slidr_textBottom_visible="false"
+        app:slidr_textTop_visible="false"
+        tools:ignore="MissingConstraints" />-->
+
+
+</android.support.constraint.ConstraintLayout>
